@@ -25,7 +25,7 @@ public class BlackJack {
 
 	public void runBlackJackGame() {
 		System.out.println("\nPress enter after round terminates to continue.");
-		boolean ongoingRound = true;
+		boolean ongoingGame = true;
 		do {
 			while (!this.deck.isEmpty()) {
 				if (!this.dealCards())
@@ -58,8 +58,8 @@ public class BlackJack {
 			}
 
 			this.printFinalScore();
-			ongoingRound = this.askForNewRound(ongoingRound);
-		} while (ongoingRound);
+			ongoingGame = this.askForNewGame(ongoingGame);
+		} while (ongoingGame);
 		System.out.println("Thanks for playing!");
 	}
 
@@ -167,7 +167,7 @@ public class BlackJack {
 		}
 	}
 
-	private boolean askForNewRound(boolean ongoingRound) {
+	private boolean askForNewGame(boolean ongoingRound) {
 		String next = "";
 		do {
 			System.out.println("Play again? Enter \"Y\"/\"N\"");
