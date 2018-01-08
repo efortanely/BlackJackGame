@@ -1,2 +1,2 @@
 # BlackJackGame
-Simple implementation of 21 with generic deck and card class to boot!
+Simple implementation of 21 with generic classes to implement other card games to boot!
